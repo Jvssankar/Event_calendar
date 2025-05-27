@@ -1,0 +1,168 @@
+/* Global styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.App {
+  padding: 0px 30px 30px 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1 {
+
+  font-size: 2.5rem;
+  margin: 5px 0px 20px 0px;
+  color: #2c3e50;
+}
+
+/* Navigation buttons */
+button {
+  background-color: #3498db;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  margin: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+/* Event form modal */
+.event-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 400px;
+}
+
+.event-form input,
+.event-form textarea,
+.event-form select {
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.event-form button {
+  background-color: #2ecc71;
+}
+
+.event-form button:hover {
+  background-color: #27ae60;
+}
+
+/* Calendar specific (if using react-big-calendar or similar) */
+.rbc-calendar {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rbc-toolbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px 0;
+}
+
+.rbc-toolbar-label {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.rbc-btn-group button {
+  margin: 0 3px;
+}
+
+.rbc-month-view {
+  border: none;
+}
+
+.rbc-day-bg {
+  border: 1px solid #ecf0f1;
+}
+
+.rbc-today {
+  background-color: #e3f2fd !important;
+}
+
+.rbc-event {
+  background-color: #e74c3c;
+  color: white;
+  padding: 4px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.calendar-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.nav-icon {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #2c3e50;
+  transition: transform 0.2s ease;
+}
+
+.nav-icon:hover {
+  transform: scale(1.2);
+  color: #007bff;
+}
+
+.toolbar-label {
+  font-weight: 600;
+}
+.calendar-toolbar {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.calendar-toolbar select {
+  padding: 5px;
+  font-size: 1rem;
+}
+
+.nav-icon {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
